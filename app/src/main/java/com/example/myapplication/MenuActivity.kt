@@ -15,13 +15,10 @@ class MenuActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        binding = ActivityMain3Binding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        //val navView: BottomNavigationView = binding.navView
+        setContentView(R.layout.menu_activity)
+        val navView: BottomNavigationView = findViewById(R.id.nav_view)
 
         val navController = findNavController(R.id.nav_host_fragment_activity_main4)
-        //navView.setupWithNavController(navController)
+        navView.setupWithNavController(navController)
     }
 }

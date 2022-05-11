@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -17,7 +18,8 @@ class MainActivity3 : AppCompatActivity() {
     }
     fun signin(view: View){
         if (email.text.toString().isNotEmpty() && password.text.toString().isNotEmpty()){
-
+            val intent = Intent(this,MenuActivity::class.java)
+            startActivity(intent)
         }
         else{
             val alert = AlertDialog.Builder(this)
@@ -28,4 +30,5 @@ class MainActivity3 : AppCompatActivity() {
                 .show()
         }
     }
+
 }

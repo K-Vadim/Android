@@ -14,14 +14,14 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.example.myapplication.ui.dashboard.DashboardFragment"
+        android:name="com.example.myapplication.ui.listen.ListenFragment"
         android:label="@string/title_dashboard"
         android:icon="@drawable/ic_profile"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.myapplication.ui.notifications.NotificationsFragment"
+        android:name="com.example.myapplication.ui.profile.ProfileFragment"
         android:label="@string/title_notifications"
         android:icon="@drawable/ic_home"
         tools:layout="@layout/fragment_notifications" />
